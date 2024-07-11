@@ -1,0 +1,41 @@
+{
+    "name": "yesccx/laravel-debugging",
+    "type": "library",
+    "description": "Laravel Application Online Debugging!",
+    "keywords": [
+        "laravel",
+        "debugging"
+    ],
+    "homepage": "https://cloudladder.coding.net/p/php/d/laravel-debugging/git",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yesccx\\Debugging\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yesccx",
+            "email": "yes.ccx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1.0",
+        "laravel/framework": "^9.0"
+    },
+    "require-dev": {
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yesccx\\Debugging\\DebuggingProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
