@@ -11,24 +11,24 @@
 
 
 ```bash
-composer require yesccx/laravel-debugging
+composer require gupo/laravel-debugging
 ```
 
 ## 使用
 
 ### 组合拳
 
-```bash
-#  php artisan debugging [--F | force] [--editor= nano | vim]
+```
+# php artisan debugging [--F | force] [--editor= nano | vim]
 
->> php artsan debugging -F
+>> php artisan debugging -F
 ```
 
-执行命令进行以下操作：
+执行命令将自动进行以下操作：
 
-1. 离线安装 `nano` 编辑器 (可选在线安装 `vim` );
-2. 禁用 `OPcache`;
-3. 重启 `PHP-FPM`.
+- 离线安装 `nano` 编辑器 (可选在线安装 `vim` );
+- 禁用 `OPcache`;
+- 重启 `PHP-FPM`.
 
 <img src="./imgs/index.gif" alt="image" width="600" height="auto">
 
@@ -36,8 +36,8 @@ composer require yesccx/laravel-debugging
 
 内置两种编辑器工具 `vim`、`nano` 的安装，其中 `nano` 支持离线安装, `vim` 目前需要在通外网的情况下安装.
 
-```bash
-# php artisan debugging:install [ nano | vim ]
+```
+#  php artisan debugging:install [nano | vim]
 
 >> php artisan debugging:install vim
 ```
@@ -48,8 +48,8 @@ composer require yesccx/laravel-debugging
 
 管理 `OPcache` 的启用与禁用.
 
-```bash
-# php artisan debugging:opcache [ enable | true | disable | false ] [ --R | restart ]
+```
+#  php artisan debugging:opcache [enable | true | disable | false] [--R | restart]
 
 >> php artisan debugging:opcache false --restart
 ```
@@ -60,8 +60,8 @@ composer require yesccx/laravel-debugging
 
 管理 `PHP-FPM` 服务状态.
 
-```bash
-# php artisan debugging:service [ restart | stop | start ]
+```
+#  php artisan debugging:service [restart | stop | start]
 
 >> php artisan debugging:service restart
 ```
